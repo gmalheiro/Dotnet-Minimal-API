@@ -30,3 +30,14 @@ C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\
 C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\obj\Debug\net6.0\ApiTarefas.pdb
 C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\obj\Debug\net6.0\ApiTarefas.genruntimeconfig.cache
 C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\obj\Debug\net6.0\ref\ApiTarefas.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\g.silva.malheiro\Documents\Programming\Back\.NET\ApiTarefas\ApiTarefas\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
