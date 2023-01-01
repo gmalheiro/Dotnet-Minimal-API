@@ -38,6 +38,30 @@ app.MapPost("/CriarTarefa", async (AppDbContext db, Tarefa tarefa) =>
     return Results.Created($"/Tarefas/{tarefa.Id}", tarefa);
 });
 
+app.MapPut("AlterarTarefa/{id}", async (int id, Tarefa inputTarefa, AppDbContext db) =>
+{
+    var tarefa = await db.Tarefas.FindAsync(id);
+
+    if (tarefa is null) return Results.NotFound("A tarefa desejada não foi encontrada");
+    
+    tarefa.Nome = inputTarefa.Nome;
+    tarefa.IsConcluida = inputTarefa.IsConcluida;
+
+    await db.SaveChangesAsync();
+    return Results.NoContent();
+});
+
+app.MapDelete("ExcluirTarefa/{id}", async (int id, AppDbContext db) =>
+{
+    if (await db.Tarefas.FindAsync(id) is Tarefa tarefa)
+    {
+        db.Tarefas.Remove(tarefa);
+        await db.SaveChangesAsync();
+        return Results.Ok(tarefa);
+    }
+    return Results.NotFound("A tarefa desejada não foi encontrada...");
+});
+
 //app.UseAuthorization();
 
 app.Run();
