@@ -23,9 +23,15 @@ app.MapGet("/Frases", async () =>
     await new HttpClient().GetStringAsync("https://ron-swanson-quotes.herokuapp.com/v2/quotes")
     );
 
-app.MapGet("/Tarefas", async (AppDbContext db) => await db.Tarefas.ToListAsync());
+app.MapGet("/ListarTarefas", async (AppDbContext db) => await db.Tarefas.ToListAsync());
 
-app.MapPost("/Tarefas", async (AppDbContext db, Tarefa tarefa) =>
+app.MapGet("/ListarTarefaPorId", async (int id, AppDbContext db) => 
+                                 await db.Tarefas.FindAsync(id) is Tarefa tarefa ? Results.Ok(tarefa) : Results.NotFound("A tarefa desejada não foi encontrada..."));
+
+app.MapGet("/ListarTarefas/Concluida", async(AppDbContext db) => 
+                                       await db.Tarefas.Where (t => t.IsConcluida).ToListAsync());
+
+app.MapPost("/CriarTarefa", async (AppDbContext db, Tarefa tarefa) =>
 {
     db.Tarefas.Add(tarefa);
     await db.SaveChangesAsync();
